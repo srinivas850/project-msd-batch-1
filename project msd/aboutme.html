@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(mnu.jpg);
+        background-size: cover;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .dis {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .leftman {
+        margin-left: 40px;
+    }
+
+    div img {
+        margin: 20px;
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hiu {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    button {
+        height: 50px;
+        width: 130px;
+        background-color: white;
+        color: violet;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+        box-shadow: 0 0 10px green;
+        background-color: blue;
+        color: white;
+    }
+
+    h1 {
+        margin: 0 0 20px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+        .dis {
+            flex-direction: column;
+        }
+
+        .leftman {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .hiu {
+            font-size: 18px;
+            margin-left: 0;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+        }
+
+        .hiu {
+            font-size: 16px;
+        }
+    }
+    img{
+  background: red;
+
+}
+img:hover {
+ 
+  transform: rotate(-40deg);
+  }
+</style>
+<body>
+    <center>
+        <h1>About Me</h1><HR>
+    </center>
+    <div class="hiu">
+        <p>
+            <center>
+                Hiii all, we are a group of individuals who are enthusiastic about the digital technological world out there.
+            </center>
+        </p>
+    </div>
+
+    <div class="dis">
+        <img src="disney.jpg" alt="pic 1" height="300px" width="300px">
+        <div>
+            <div class="leftman">
+                <h1>DISNEY</h1>
+                <p>
+                    Disneyland is a renowned theme park founded by Walt Disney,<BR> located in Anaheim, <BR>California, and known for its iconic attractions, <BR>entertainment, and immersive experiences based on<BR> Disney's beloved characters and stories.
+                </p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dis">
+        <div>
+            <h1>DOREAMON</h1>
+            <p>
+                Doraemon is a popular Japanese manga and anime series created by Fujiko F. <BR>Fujio, featuring a robotic cat from the future <BR>named Doraemon who travels back in time to help a young boy named Nobita Nobi <BR>navigate life's challenges using futuristic gadgets.
+            </p>
+            <button type="button">Read More</button>
+        </div>
+        <img src="doreamon.jpeg" alt="pic 1" height="300px" width="300px">
+    </div>
+</body>
+</html>

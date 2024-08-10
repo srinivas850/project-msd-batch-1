@@ -1,0 +1,116 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-image: url(spaceu.avif);
+    background-size: cover;
+}
+
+.nav a {
+    align-items: center;
+    justify-content: center;
+    align-items: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.all,
+.people,
+.animals,
+.Nature:active {
+    color: green;
+}
+
+img {
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.imgjar {
+    display: flex;
+    margin-left: 50px;
+}
+
+.imgbur {
+    display: flex;
+    margin-left: 50px;
+}
+
+.imgpur {
+    display: flex;
+    margin-left: 50px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .imgjar,
+    .imgbur,
+    .imgpur {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .nav a {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .nav a {
+        font-size: 12px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+@keyframes zoomAndSettle {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  img{
+    animation: zoomAndSettle 0.5s ease-out;
+  }
+  

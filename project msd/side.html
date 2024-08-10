@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(164, 62, 75, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: 30px auto;
+            width: 400px;
+            height: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            margin: 5px 0 20px 0;
+            font-size: 18px;
+        }
+
+        .centerhu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .centerhu div {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color:BLACK;
+            display: block;
+            padding: 15px;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .about:hover,
+        .what:hover,
+        .mywork:hover,
+        .contactme:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .centerhu a:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+
+        @media (max-width: 1024px) {
+            img {
+                width:300px;
+                height:300px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                padding: 12px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .centerhu {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            a {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            .centerhu div {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="tom bro.jpg" alt="Tom Holland"height="300px"width="300px">
+    <h2>Tom Holland</h2>
+    <p>Web Designer</p>
+    <div class="centerhu">
+        <div class="about">
+           <hr> <a href="aboutme.html" target="center">About me</a><hr>
+        </div>
+        <div class="what">
+            <a href="what.html" target="center">What I'm good at</a><hr>
+        </div>
+        <div class="mywork">
+            <a href="mywork.html" target="center">My work</a><hr>
+        </div>
+        <div class="contactme">
+            <a href="contactme.html" target="center">Contact me</a><hr>
+        </div>
+    </div>
+</body>
+</html>
